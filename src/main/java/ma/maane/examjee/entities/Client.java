@@ -1,16 +1,17 @@
 package ma.maane.examjee.entities;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Entity
-@Getter
-@Setter
+@Table(name = "clients")
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "clients")
 public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
